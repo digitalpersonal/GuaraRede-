@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Updated favicon to use the app logo -->
+    <link rel="icon" type="image/png" href="/assets/icons/logo-72x72.png" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="description" content="A primeira cidade do Brasil a ter uma rede social própria! Conecte-se com sua comunidade local." />
+    <!-- Apple Touch Icon for iOS home screen -->
+    <link rel="apple-touch-icon" href="/assets/icons/logo-192x192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>RedeGuara - A Rede Social de Guaranésia-MG</title>
+    <style>
+      .noscript-warning {
+        display: none; /* Hide by default */
+      }
+    </style>
+    <noscript>
+      <style>
+        #root { display: none; }
+        .noscript-warning {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          padding: 2rem;
+          text-align: center;
+          font-family: system-ui, -apple-system, sans-serif;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="noscript-warning">
+      <div>
+        <h1>JavaScript Necessário</h1>
+        <p>Por favor, habilite o JavaScript no seu navegador para usar o RedeGuara.</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

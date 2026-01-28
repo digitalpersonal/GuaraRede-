@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Prevent IOS rubber banding/pull-to-refresh on the body itself */
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-white text-gray-800 antialiased;
+  /* Improve tap feel */
+  touch-action: manipulation;
+  /* Prevent text selection on UI elements for app-like feel, allow on content */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Allow scrolling inside the app container */
+#root {
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior-y: auto;
+}
+
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Focus states for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
